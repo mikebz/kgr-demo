@@ -1,10 +1,10 @@
 apiVersion: configsync.gke.io/v1beta1
-kind: RepoSync
+kind: RootSync
 metadata:
   labels:
     platform-package: "true"
   name: basens
-  namespace: test-ns
+  namespace: config-management-system
 spec:
   git:
     auth: none
