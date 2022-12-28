@@ -1,0 +1,14 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata:
+  name: cluster-config
+  namespace: config-management-system
+spec:
+  git:
+    auth: none
+    branch: main
+    dir: clusters/mb-store1/root/cluster-config
+    period: 0s
+    repo: https://github.com/mikebz/kgr-demo.git
+  sourceFormat: unstructured
+  sourceType: git
