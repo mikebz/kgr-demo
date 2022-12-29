@@ -10,6 +10,6 @@ spec:
     branch: main
     period: 0s
     repo: https://www.github.com/mikebz/kpt-samples.git
-    revision: v5
+    revision: v9
   sourceFormat: unstructured
   sourceType: git
