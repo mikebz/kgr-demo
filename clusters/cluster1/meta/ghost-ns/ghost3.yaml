@@ -7,6 +7,7 @@ spec:
   git:
     auth: none
     dir: ghost3
+    branch: main
     period: 0s
     repo: https://www.github.com/mikebz/kpt-samples.git
     revision: v5
