@@ -1,0 +1,21 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: cluster-config
+upstream:
+  type: git
+  git:
+    repo: https://github.com/mikebz/kpt-samples
+    directory: /cluster-config
+    ref: main
+  updateStrategy: resource-merge
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/mikebz/kpt-samples
+    directory: /cluster-config
+    ref: main
+    commit: da51d039cd4d0a1f67d097f78f5a55484da44dfa
+info:
+  description: cluster configuration RootSync
+pipeline: {}

@@ -1,0 +1,14 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RepoSync
+metadata:
+  name: ghost3
+  namespace: ghost-ns
+spec:
+  git:
+    auth: none
+    dir: ghost3
+    period: 0s
+    repo: https://www.github.com/mikebz/kpt-samples.git
+    revision: v5
+  sourceFormat: unstructured
+  sourceType: git
